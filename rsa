@@ -10,12 +10,12 @@ with open(sys.argv[1], "r") as fp:
         print("{}={}*{}".format(n, int(n / 2), 2))
     # value is odd number
     else:
-        e = int(ceil(sqrt(n)))
+        a = int(ceil(sqrt(n)))
         while (True):
-            f1 = a * a - n
-            f = int(sqrt(f1))
-            if(f * f == f1):
+            b1 = a * a - n
+            b = int(sqrt(b1))
+            if(b * b == b1):
                 break
             else:
-                e += 1
-        print("{}={}*{}".format(n, e + f, e - f))
+                a += 1
+        print("{}={}*{}".format(n, a + b, a - b))
